@@ -1,0 +1,210 @@
+#footer {
+    width: 100%;
+    background-color: $colorA;
+    margin-top: 2rem;
+
+    .foot {
+        width: 100%;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footerUp {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            .fottWe {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+
+                #logoImg {
+                    width: 250px;
+                    transition: 0.3s;
+                    margin-bottom: 1rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.15);
+                    }
+                }
+
+                p {
+                    width: 300px;
+                    text-align: center;
+                    color: $colorD;
+                    font-size: 14px;
+                    margin-bottom: 1rem;
+                }
+
+                .footnetWorks {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    width: 60%;
+
+                    .footInstagrame {
+                        width: 30px;
+                        height: 30px;
+                        background-size: cover;
+                        background-image: url(../assets/instagramW.png);
+                        transition: .3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-image: url(../assets/instagramG.png);
+                        }
+                    }
+
+                    .footFacebook {
+                        width: 30px;
+                        height: 30px;
+                        background-size: cover;
+                        background-image: url(../assets/facebookW.png);
+                        transition: .3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-image: url(../assets/facebookG.png);
+                        }
+                    }
+
+                    .footYouTube {
+                        width: 32px;
+                        height: 32px;
+                        background-size: cover;
+                        background-image: url(../assets/youtubeW.png);
+                        transition: .3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-image: url(../assets/youtubeG.png);
+                        }
+                    }
+
+                    .footTikTok {
+                        width: 32px;
+                        height: 32px;
+                        background-size: cover;
+                        background-image: url(../assets/tiktokW.png);
+                        transition: .3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-image: url(../assets/tiktokG.png);
+                        }
+                    }
+                }
+
+                .footWhatsapp {
+                    width: 40%;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1rem;
+                    border: solid 1px #fff;
+                    padding: 12px;
+                    border-radius: 12px;
+                    transition: .3s;
+                    cursor: pointer;
+
+                    img {
+                        width: 20px;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        margin-top: 1rem;
+                    }
+
+                    &:hover {
+                        background-color: $colorC;
+                    }
+                }
+            }
+
+            .footCards {
+                display: flex;
+                justify-content: space-around;
+                width: 70%;
+                height: auto;
+
+                .footCards_children {
+                    h2 {
+                        color: $colorD;
+                        margin-bottom: 1rem;
+                    }
+
+                    ul {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        gap: 1rem;
+
+                        li {
+                            list-style: none;
+
+                            a {
+                                text-decoration: none;
+                                color: $colorD;
+                                transition: .3s;
+
+                                &:hover {
+                                    color: $colorC;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footerBotom {
+            margin: 2rem 0 1rem 0;
+            color: #4d4d4d;
+            text-align: center;
+            font-size: 14px;
+
+            p {
+                margin-top: 6px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footerUp {
+        flex-direction: column;
+    }
+    .fottWe {
+        width: 100% !important;
+    }
+    .footnetWorks {
+        width: 100%;
+    }
+    .footCards {
+        margin-top: 2rem;
+        width: 100% !important;
+    }
+
+    .separador {
+        display: block;
+        width:80%;
+        border-top: solid 2px #4d4d4d;
+        margin: 2rem auto;
+    }
+
+    .footCards_children ul li a {
+        font-size: 12px;
+    }
+
+    .footCards_children h2 {
+        font-size: 1rem;
+    }
+}

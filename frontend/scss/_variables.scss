@@ -1,0 +1,42 @@
+$colorA: #242424;
+$colorB: #313131;
+$colorC: #0c6404;
+$colorD: #EAEBEF;
+
+.btn-green {
+    background-color: $colorC;
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: solid 2px $colorC;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: .3s;
+    box-shadow: 1px 2px 5px;
+    &:hover {
+        background-color: #3a6d35;
+    }
+    &:active {
+        box-shadow: none;
+    }
+}
+
+.btn-blue {
+    background-color: #4699dd;
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: solid 2px #4699dd;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: .3s;
+    box-shadow: 1px 2px 5px;
+    &:hover {
+        background-color:rgb(74, 105, 129);
+    }
+    &:active {
+        box-shadow: none;
+    }
+}
