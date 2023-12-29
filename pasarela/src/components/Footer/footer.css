@@ -1,0 +1,203 @@
+.foot {
+    width: 100%;
+    background-color: #242424;
+    margin-top: 6rem;
+    padding-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerUp {
+    width: 100%;
+    display: flex;
+    color: #EAEBEF;
+}
+
+.fottWe {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fottWe p {
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+#logoImg {
+    width: 250px;
+    transition: 0.3s;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#logoImg:hover {
+    transform: scale(1.15);
+}
+
+.footnetWorks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.footInstagrame {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url(../../assets/instagramW.png);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footInstagrame:hover {
+    background-image: url(../../assets/instagramG.png);
+}
+
+.footFacebook {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url(../../assets/facebookW.png);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footFacebook:hover {
+    background-image: url(../../assets/facebookG.png);
+}
+
+.footYouTube {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url(../../assets/youtubeW.png);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footYouTube:hover {
+    background-image: url(../../assets/youtubeG.png);
+}
+
+.footTikTok {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url(../../assets/tiktokW.png);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footTikTok:hover {
+    background-image: url(../../assets/tiktokG.png);
+}
+
+.footWhatsapp {
+    width: 40%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    border: solid 1px #fff;
+    padding: 12px;
+    border-radius: 12px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footWhatsapp:hover {
+    background-color: #0c6404;
+}
+
+.footWhatsapp img {
+    width: 20px;
+}
+
+.footWhatsapp p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.footCards {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    height: 80%;
+}
+
+.footCards_children h2 {
+    color: #EAEBEF;
+    margin-bottom: 1rem;
+}
+
+.footCards_children ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.footCards_children ul li {
+    list-style: none;
+}
+
+.footCards_children ul li a {
+    text-decoration: none;
+    color: #EAEBEF;
+    transition: .3s;
+}
+
+.footCards_children ul li a:hover {
+    color: #0c6404;
+}
+
+.footerBotom {
+    margin: 2rem 0 1rem 0;
+    color: #4d4d4d;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footerBotom p {
+    margin-top: 6px;
+}
+
+@media (max-width: 767px) {
+    .footerUp {
+        flex-direction: column;
+    }
+    .fottWe {
+        width: 100% !important;
+    }
+    .footnetWorks {
+        width: 100%;
+    }
+    .footCards {
+        margin-top: 2rem;
+        width: 100% !important;
+    }
+
+    .separador {
+        display: block;
+        width:80%;
+        border-top: solid 2px #4d4d4d;
+        margin: 2rem auto;
+    }
+
+    .footCards_children ul li a {
+        font-size: 12px;
+    }
+
+    .footCards_children h2 {
+        font-size: 1rem;
+    }
+}

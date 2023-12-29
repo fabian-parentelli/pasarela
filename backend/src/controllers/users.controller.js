@@ -22,8 +22,9 @@ const login = async (req, res) => {
 };
 
 const current = async (req, res) => {
+    const {user} = req.user;
     try {
-        const result = await userService.current({ ...req.user });
+        const result = await userService.current(user);
         if (result) return res.sendSuccess(result);
     } catch (error) {
         if (error instanceof UserNotFound) return res.sendClientError(error.message);

@@ -1,0 +1,12 @@
+.carousel {
+    background-color: #242424;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

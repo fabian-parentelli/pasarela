@@ -83,7 +83,7 @@ const interPass = async (id) => {
     const user = await userRepository.getByIdPass(id);
     if (!user) throw new UserNotFound('Usuario no encontrado');
     const tokenPass = passwordToken(user.email);
-    const url = `http://127.0.0.1:5500/index.html?token=${tokenPass}`;
+    const url = `http://localhost:5173/password?token=${tokenPass}`;
     return url;
 };
 
